@@ -1,0 +1,40 @@
+
+.navbar-toggler { cursor: pointer; padding: 10px 35px 16px 0px; }
+.navbar-toggler span, .navbar-toggler span:before, .navbar-toggler span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.navbar-toggler span:before {
+  top: -10px; 
+}
+.navbar-toggler span:after {
+  bottom: -10px;
+}
+
+.navbar-toggler span, .navbar-toggler span:before, .navbar-toggler span:after {
+  transition: all 350ms ease-in-out;
+}
+.navbar-toggler.active span {
+  background-color: transparent;
+}
+.navbar-toggler.active span:before, .navbar-toggler.active span:after {
+  top: 0;
+}
+.navbar-toggler.active span:before {
+  transform: rotate(45deg);
+}
+.navbar-toggler.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width:768px){
+    .d{background: rgb(246, 251, 254);
+    border-bottom: 1px solid black;
+height: 380px;}
+    }
